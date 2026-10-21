@@ -1,12 +1,9 @@
 <?php
-// Comprobamos si se han enviado los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Guardamos los datos en cookies (duración: 1 hora)
     setcookie("mayoredad", $_POST["mayoredad"], time() + 3600, "/");
     setcookie("idioma", $_POST["idioma"], time() + 3600, "/");
     setcookie("moneda", $_POST["moneda"], time() + 3600, "/");
     
-    // Redirigimos a la página que mostrará la información
     header("Location: informacion.php");
     exit();
 }

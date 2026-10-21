@@ -22,6 +22,7 @@ if ($idioma == 'ca') {
     $producto_1 = "Te ofrecemos el vino “Les Terrasses” a un precio de $precio_vino";
     $producto_2 = "Te ofrecemos la cerveza “Artesanal” a un precio de $precio_cerveza";
 } else {
+    // Inglés (en)
     $titulo = "Our store";
     $msg_menor = "We cannot sell you alcohol if you are underage.";
     $producto_1 = "We offer you the wine “Les Terrasses” at a price of $precio_vino";
