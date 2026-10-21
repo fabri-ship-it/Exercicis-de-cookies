@@ -26,17 +26,17 @@ if (isset($_COOKIE['compra_feta']) && $_COOKIE['compra_feta'] == "si") {
 
     <h1>La nostra botiga</h1>
     
-        <p><strong>Visites realitzades: <?php echo $visites; ?></strong></p>
+    <p><strong>Visites realitzades: <?php echo $visites; ?></strong></p>
 
     <?php
     if (!$compra_feta) {
         if ($visites >= 10) {
-            echo "<p style='color: red; font-weight: bold;'>Oferta exclusiva sols per a tu! Utilitza el codi BOTIGA50 per obtenir un 50% de descompte en les teves primeres compres a la botiga</p>";
+            echo "<p style='color: red; font-weight: bold;'>Oferta exclusiva solo para ti Utilita el codigo BOTIGA50 para obtener un 50% de descuento en tus primeras compras</p>";
         } elseif ($visites >= 5) {
-            echo "<p style='color: green; font-weight: bold;'>Oferta exclusiva! Utilitza el codi BOTIGA20 per obtenir un 20% de descompte en les teves primeres compres a la botiga</p>";
+            echo "<p style='color: green; font-weight: bold;'>Oferta exclusiva Utiliza el codigo BOTIGA20 para obtener un 20% de descuento en tus primera compra</p>";
         }
     } else {
-        echo "<p style='color: grey;'>Gràcies per ser client nostre. Ja has gaudit de les ofertes de benvinguda!</p>";
+        echo "<p>gracias por disfrutar de las ofertas</p>";
     }
     ?>
 
