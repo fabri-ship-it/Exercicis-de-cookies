@@ -26,7 +26,7 @@ if (isset($_COOKIE['compra_feta']) && $_COOKIE['compra_feta'] == "si") {
 
     <h1>La nostra botiga</h1>
     
-    <p><strong>Visites realitzades: <?php echo $visites; ?></strong></p>
+        <p><strong>Visites realitzades: <?php echo $visites; ?></strong></p>
 
     <?php
     if (!$compra_feta) {
