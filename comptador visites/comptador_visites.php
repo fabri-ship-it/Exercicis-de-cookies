@@ -31,9 +31,9 @@ if (isset($_COOKIE['compra_feta']) && $_COOKIE['compra_feta'] == "si") {
     <?php
     if (!$compra_feta) {
         if ($visites >= 10) {
-            echo "<p style='color: red; font-weight: bold;'>Oferta exclusiva solo para ti Utilita el codigo BOTIGA50 para obtener un 50% de descuento en tus primeras compras</p>";
+            echo "<p>Oferta exclusiva solo para ti Utilita el codigo BOTIGA50 para obtener un 50% de descuento en tus primeras compras</p>";
         } elseif ($visites >= 5) {
-            echo "<p style='color: green; font-weight: bold;'>Oferta exclusiva Utiliza el codigo BOTIGA20 para obtener un 20% de descuento en tus primera compra</p>";
+            echo "<p>Oferta exclusiva Utiliza el codigo BOTIGA20 para obtener un 20% de descuento en tus primera compra</p>";
         }
     } else {
         echo "<p>gracias por disfrutar de las ofertas</p>";
